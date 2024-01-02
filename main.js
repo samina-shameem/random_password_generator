@@ -2,7 +2,7 @@ const btnEl = document.querySelector(".btn");
 
 const inputEl = document.getElementById("input");
 const copyIconEl =document.querySelector(".fa-copy");
-const alertContainerEl = document.querySelector("alert-container");
+const alertContainerEl = document.querySelector(".alert-container");
 
 btnEl.addEventListener("click",()=>{
     createPassword()
