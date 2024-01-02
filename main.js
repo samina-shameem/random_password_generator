@@ -10,7 +10,7 @@ function createPassword(){
 
     const passwordLength = 14;
     let password = ""
-    for(let index =0; index < array.length; index++){
-        const element = array[index];
+    for(let index =0; index < passwordLength; index++){
+        const randomNum = Math.random ()* chars.length;
     }
 }
