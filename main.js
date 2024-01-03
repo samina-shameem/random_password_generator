@@ -11,7 +11,13 @@ btnEl.addEventListener("click",()=>{
 copyIconEl.addEventListener("click",() =>{
 
     copyPassword()
-    alertContainerEl.classList.remove("active");
+    if(inputEl.value){
+        alertContainerEl.classList.remove("active");
+        setTimeout(()=>{
+            alertContainerEl.classList.add("active");
+        },2000);
+    }
+    
 });
 
 function createPassword(){
@@ -25,7 +31,7 @@ function createPassword(){
        // console.log(randomNum, password);
     }
     inputEl.value = password;
-    alertContainerEl.innerText = password + "copied!";
+    alertContainerEl.innerText = password + "copied";
 }
 
 function copyPassword(){
